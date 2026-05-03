@@ -6,11 +6,11 @@ An AI-powered computer vision application that classifies waste images into cate
 
 ## 🚀 Features
 
-- 📸 Upload an image of waste material  
-- 🧠 AI-powered classification using deep learning  
-- 📊 Displays prediction with confidence score  
-- 🎯 Clean, interactive web interface using Gradio  
-- 🔒 Runs locally (no cloud required)
+- Upload an image of waste material  
+- AI-powered classification using deep learning  
+- Displays prediction with confidence score  
+- Clean and interactive web interface using Gradio  
+- Runs locally (no cloud required)  
 
 ---
 
@@ -26,10 +26,30 @@ An AI-powered computer vision application that classifies waste images into cate
 
 ---
 
-## 🖼️ Application Preview
+## 📸 Application Preview
 
-### 📌 Home Screen
+### 🏠 Home Screen
 ![Home Screen](screenshots/app_home.png)
 
-### 📌 Prediction Result
-![Prediction Result](screenshots/prediction_result.png)
+### 🔍 Prediction Result
+![Prediction](screenshots/prediction_result.png)
+
+---
+
+## ⚙️ Tech Stack
+
+- Python  
+- TensorFlow / Keras  
+- Gradio  
+- NumPy  
+- Computer Vision (CNN / MobileNet)  
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+```bash
+git clone https://github.com/shaida-khan/smart-waste-sorting-system.git
+cd smart-waste-sorting-system
+```
