@@ -17,7 +17,33 @@ def predict_waste(image):
     predicted_class = class_names[predicted_index]
     confidence = float(predictions[0][predicted_index])
 
-    return f"🧠 Prediction: {predicted_class.title()}\n📊 Confidence: {confidence * 100:.2f}%"
+    recyclable = {
+        "cardboard": "Yes ♻️",
+        "glass": "Yes ♻️",
+        "metal": "Yes ♻️",
+        "paper": "Yes ♻️",
+        "plastic": "Sometimes ♻️",
+        "trash": "No ❌"
+    }
+
+    bin_type = {
+        "cardboard": "Recycling Bin",
+        "glass": "Recycling Bin",
+        "metal": "Recycling Bin",
+        "paper": "Recycling Bin",
+        "plastic": "Check Local Rules",
+        "trash": "General Waste Bin"
+    }
+
+    return f"""
+🧠 Prediction: {predicted_class.upper()}
+
+📊 Confidence: {confidence * 100:.2f}%
+
+♻️ Recyclable: {recyclable[predicted_class]}
+
+🗑️ Recommended Bin: {bin_type[predicted_class]}
+"""
 
 custom_css = """
 body {
@@ -72,8 +98,8 @@ with gr.Blocks(css=custom_css, title="Smart Waste Sorting System") as app:
 
         with gr.Column(scale=1):
             result_output = gr.Textbox(
-                label="AI Prediction Result",
-                lines=4
+                label="♻️ AI Waste Analysis",
+                lines=6
             )
 
     with gr.Row():
