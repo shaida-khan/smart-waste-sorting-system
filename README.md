@@ -1,6 +1,10 @@
 # ♻️ Smart Waste Sorting System (AI-Powered)
 
-An AI-powered computer vision application that classifies waste images into categories such as cardboard, glass, metal, paper, plastic, and trash to support smarter recycling decisions.
+![Live App](https://img.shields.io/badge/Live-App-green)
+
+## 🌐 Live AI App
+
+👉 https://shaida-ai-smart-waste-sorting-system.hf.space
 
 ---
 
@@ -8,9 +12,12 @@ An AI-powered computer vision application that classifies waste images into cate
 
 - Upload an image of waste material  
 - AI-powered classification using deep learning  
-- Displays prediction with confidence score  
+- Displays prediction with confidence score
+- Provides recyclability guidance (Yes / No / Conditional)
+- Recommends appropriate waste disposal bin
+- Real-time decision support for smarter recycling  
 - Clean and interactive web interface using Gradio  
-- Runs locally (no cloud required)  
+- Runs locally and as a live deployed application  
 
 ---
 
@@ -21,8 +28,10 @@ An AI-powered computer vision application that classifies waste images into cate
 3. Deep learning model processes the image  
 4. Model predicts the waste category  
 5. App displays:
-   - Predicted class  
-   - Confidence score  
+   - Predicted class
+   - Confidence score
+   - Recyclability status
+   - Recommended disposal bin  
 
 ---
 
@@ -61,5 +70,12 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-4. Open in browser:
+4. Open in browser (local):
 http://127.0.0.1:7860
+
+---
+
+## 🚀 Real-World Use Case
+
+This system goes beyond basic classification by providing actionable insights for waste management.  
+It can assist individuals and organizations in making informed recycling decisions, improving sustainability practices, and reducing environmental impact.
